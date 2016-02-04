@@ -12,8 +12,8 @@ var ParseServer = require('parse-server').ParseServer;
 // Specify the connection string for your mongodb database
 // and the location to your Parse cloud code
 var api = new ParseServer({
-  databaseURI: 'mongodb://lanma:lanmacho	@ds055485.mongolab.com:55485/parsedbamazon',
-  cloud: './main.js', // Provide an absolute path
+  databaseURI: 'mongodb://lanma:lanmacho@ds055485.mongolab.com:55485/parsedbamazon',
+  cloud: path.join(__dirname, './') + '/main.js', // Provide an absolute path
   appId: 'fb18ad09bc8906b4954d715accbd11b4',
   masterKey: 'mySecretMasterKey',
   fileKey: 'optionalFileKey'
